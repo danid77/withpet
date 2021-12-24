@@ -7,7 +7,7 @@
 		<h2>Profile</h2>
 		<div align="center">
 			<c:if test="${empty member.profile}">
-				<img src="./images/basic_profile.png" height="400" width="400" />
+				<img class="profile" src="./images/basic_profile.jpg" height="400" width="400" />
 			</c:if>
 			<c:if test="${!empty member.profile}">
 				<img src="${path}/upload/member/${member.profile}" height="500"

@@ -41,9 +41,9 @@
 						<tr>
 							<td align="center">
 								<c:if test="${empty member.profile}">
-									<img src="${path}/images/basic_profile.jpg" height="100" width="100" />
+									<img class="profile" src="${path}/images/basic_profile.jpg" height="100" width="100" />
 								</c:if> <c:if test="${!empty member.profile}">
-									<img src="${path}/upload/member/${member.profile}" height="100" width="100" />
+									<img class="profile" src="${path}/upload/member/${member.profile}" height="100" width="100" />
 								</c:if></td>
 							<td><a href="managerView?id=${member.id}">${member.id}</a></td>
 							<td>${member.name}</td>
